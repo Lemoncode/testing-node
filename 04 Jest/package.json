@@ -50,14 +50,15 @@
     "express": "^4.16.2"
   },
   "jest": {
-    "testRegex": "\\.spec\\.tsx?$",
+    "testRegex": "\\.spec\\.ts$",
     "moduleFileExtensions": [
       "js",
-      "jsx",
       "json",
-      "ts",
-      "tsx"
+      "ts"
     ],
-    "restoreMocks": true
+    "restoreMocks": true,
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
   }
 }
