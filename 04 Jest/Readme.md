@@ -282,3 +282,54 @@ describe('LoginController', () => {
 });
 
 ```
+
+## Debugging Jest
+
+Jest is running over node, so we could use VS Code for debugging jest specs:
+
+### Using VS Code
+
+As we know, VS Code provides by default a [node debugger](https://code.visualstudio.com/Docs/editor/debugging):
+
+- Adding debug launch.json in VS Code:
+
+ ![Debug VS Code](../99%20Readme%20Resources/04%20Jest/00%20Adding%20debug%20launch.json%20in%20VS%20Code.png)
+
+ - Configuring launch.json to single and watchAll runs:
+
+### ./.vscode/launch.json
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest single run",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": [
+        "--verbose"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest watchAll run",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": [
+        "--watchAll",
+        "--verbose",
+        "-i"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
+
+```
+
+![Debugging](../99%20Readme%20Resources/04%20Jest/01%20Debugging.png)
