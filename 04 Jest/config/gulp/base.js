@@ -16,7 +16,7 @@ gulp.task('clean', (callback) => (
 ));
 
 gulp.task('ts', ['tslint'], () => (
-  gulp.src(paths.ts)
+  gulp.src([paths.ts, `!${paths.specs}`])
     .pipe(sourcemaps.init())
     .pipe(tsConfig())
     .js
