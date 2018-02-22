@@ -1,0 +1,15 @@
+{
+  "name": "kindergraden",
+  "version": "1.0.0",
+  "description": "main module of kindergarden",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babys",
+    "service"
+  ],
+  "author": "Jaime Salas",
+  "license": "ISC"
+}
