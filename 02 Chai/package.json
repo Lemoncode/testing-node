@@ -1,0 +1,18 @@
+{
+    "name": "02_using_chai",
+    "version": "1.0.0",
+    "description": "Demostration purpose for chai",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "chai",
+        "tests"
+    ],
+    "author": "Jaime Salas",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.1.2"
+    }
+}
